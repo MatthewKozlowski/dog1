@@ -16,6 +16,7 @@ function getDogImages(userInput){
 function watchForm(){
     $('form').submit(function(event){
         event.preventDefault();
+        $('.dogImages').remove();
        let userInput = $('#userInput').val();
        console.log(userInput);
         getDogImages(userInput);
